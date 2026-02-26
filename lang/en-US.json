@@ -62,13 +62,17 @@
     "Btn_Clean": "Clear",
     "Btn_Keypad": "Key",
 
+    "Btn_ReLoad": "Reload",
+    "Btn_Save": "Save",
+    "Btn_SaveAs": "Save As",
+
     "Btn_ProjectWebsite": "Homepage",
     "Btn_Issues": "Feedback",
     "Btn_QQGroup": "QQ-Group",
     "Btn_WechatGroup": "VX-Group",
     "Btn_Sponsor": "Donate",
     "Btn_CustomSoftware": "CustomSoft",
-    "Btn_OpenThemeEditor": "Open Theme Editor",
+    "Btn_OpenThemeEditor": "Theme Editor",
 
 
 
@@ -85,7 +89,7 @@
     "Menu_Tools": "Tools",
     "Menu_Taskmgr": "Task Manager",
     "Menu_DataManager": "Data Manager",
-    "Menu_ViewHotKey": "View Item Hotkeys",
+    "Menu_ViewHotKey": "Item Hotkeys",
     "Menu_UpdataEnv": "Update Environment Variables",
     "Menu_PathConvert": "Path Convert",
     "Menu_PathConvertDe": "To Absolute Path",
@@ -222,6 +226,97 @@
 
     
 
+
+    "TS_0001":"Global-Text",
+    "TS_0002":"Global-Text(Disabled)",
+
+    "TS_0003":"TitleBar-Background",
+    "TS_0004":"TitleBar-Text",
+    "TS_0005":"TitleBar-ButtonText-Normal",
+    "TS_0006":"TitleBar-ButtonText-Hover",
+    "TS_0007":"TitleBar-ButtonText-Active",
+    "TS_0008":"TitleBar-ButtonBackground-Normal",
+    "TS_0009":"TitleBar-ButtonBackground-Hover",
+    "TS_0010":"TitleBar-ButtonBackground-Active",
+
+    "TS_0011":"Category-Container-Background",
+    "TS_0012":"Category-Text-Normal",
+    "TS_0013":"Category-Text-Hover",
+    "TS_0014":"Category-Text-Active",
+    "TS_0015":"Category-Background-Normal",
+    "TS_0016":"Category-Background-Hover",
+    "TS_0017":"Category-Background-Active",
+
+    "TS_0018":"Item-Container-Background",
+    "TS_0019":"Item-Text-Normal",
+    "TS_0020":"Item-Text-Hover",
+    "TS_0021":"Item-Text-Active",
+    "TS_0022":"Item-Background-Normal",
+    "TS_0023":"Item-Background-Hover",
+    "TS_0024":"Item-Background-Active",
+
+    "TS_0025":"Scrollbar-Normal",
+    "TS_0026":"Scrollbar-Hover",
+    "TS_0027":"Scrollbar-Active",
+
+    "TS_0028":"",
+    "TS_0029":"SubWindow-Background",
+    "TS_0030":"SubWindow-Separator",
+
+    "TS_0031":"Menu-Border",
+    "TS_0032":"Menu-Background",
+    "TS_0033":"Menu-Text",
+    "TS_0034":"Menu-Text(Disabled)",
+    "TS_0035":"Menu-Separator",
+    "TS_0036":"Menu-Background-Active",
+
+    "TS_0037":"Tooltip-Border",
+    "TS_0038":"Tooltip-Background",
+    "TS_0039":"Tooltip-Text",
+
+    "TS_0040":"Control-Input-Border",
+    "TS_0041":"Control-Input-Background",
+    "TS_0042":"Control-Input-Text(Placeholder)",
+    "TS_0043":"Control-Input-Text",
+
+    "TS_0044":"Control-SearchBox-Background",
+    "TS_0045":"Control-SearchBox-Text(Placeholder)",
+    "TS_0046":"Control-SearchBox-Text",
+
+    "TS_0047":"Control-Button-Text-Normal",
+    "TS_0048":"Control-Button-Background-Normal",
+    "TS_0049":"Control-Button-Background-Hover",
+    "TS_0050":"Control-Button-Background-Active",
+
+    "TS_0051":"Control-Checkbox-Border",
+    "TS_0052":"Control-Checkbox-Text",
+    "TS_0053":"Control-Checkbox-Checkmark",
+    "TS_0054":"Control-Checkbox-Background-Normal",
+    "TS_0055":"Control-Checkbox-Background-Hover",
+    "TS_0056":"Control-Checkbox-Background-Active",
+
+    "TS_0057":"Control-Dropdown-Border",
+    "TS_0058":"Control-Dropdown-Text",
+    "TS_0059":"Control-Dropdown-Button-Normal",
+    "TS_0060":"Control-Dropdown-Button-Hover",
+    "TS_0061":"Control-Dropdown-Background-Normal",
+    "TS_0062":"Control-Dropdown-Background-Hover",
+    "TS_0063":"Control-Dropdown-Option-Container-Background",
+    "TS_0064":"Control-Dropdown-Option-Selected",
+    "TS_0065":"Control-Dropdown-Option-Hover",
+    "TS_0066":"Control-Dropdown-Option-Active",
+
+    "TS_0067":"Control-Slider-Border",
+    "TS_0068":"Control-Slider-Text",
+    "TS_0069":"Control-Slider-Button-Normal",
+    "TS_0070":"Control-Slider-Button-Active",
+    "TS_0071":"Control-Slider-Background-Normal",
+    "TS_0072":"Control-Slider-Background-Hover",
+    "TS_0073":"Control-Slider-Background-Active",
+
+
+
+
     
     "Set_Tab_0": "About",
     "Set_Tab_1": "General",
@@ -259,7 +354,7 @@
     "SSTR_010006": "Auto check for updates",
     "SSTR_010007": "Tray icon type",
     "SSTR_010008": "Prefer relative paths",
-    "SSTR_010009": "Enhanced keyboard hook",
+    "SSTR_010009": "Enhanced hook",
     "SSTR_010010": "Enable drag & drop enhancement",
     "SSTR_010011": "Execute when dragged to folder",
     "SSTR_010012": "Download link icons on drag",
