@@ -100,6 +100,7 @@
     "Menu_QS_mrp": "Auto Reset Position",
     "Menu_QS_lckp": "Lock Position",
     "Menu_QS_lcks": "Lock Size",
+    "Menu_BuildInfo": "Build Info",
     "Menu_Update": "Check for Updates",
     "Menu_Doc": "Documentation",
     "Menu_Set": "Settings",
@@ -191,6 +192,12 @@
     "BI_certlm": "Computer Certificates",
     "BI_appwiz": "Programs and Features",
     "BI_optionalfeatures": "Windows Features",
+    "BI_godmode": "God Mode",
+    "BI_envar": "Environment Variable",
+    "BI_taskschd": "Task Scheduler",
+    "BI_secpol": "Local Security Policy",
+    "BI_eventvwr": "Event Viewer",
+    "BI_msconfig": "System Configuration",
 
 
 
@@ -401,6 +408,7 @@
     "SSTR_010054": "Enable theme transparency",
     "SSTR_010055": "Middle-click category to run all",
     "SSTR_010056": "Auto backup",
+    "SSTR_010058": "Action performed by the close button",
 
 
     "ST_000001": "Do Not Disturb mode with lower priority than the tray menu",
@@ -475,7 +483,8 @@
     "SI_000043": "Right Alt",
     "SI_000044": "Left Windows",
     "SI_000045": "Right Windows",
-
+    "SI_000046": "Hide (Default)",
+    "SI_000047": "Default",
 
     "__END": ""
 }

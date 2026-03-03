@@ -100,6 +100,7 @@
     "Menu_QS_mrp": "自动重置位置",
     "Menu_QS_lckp": "锁定位置",
     "Menu_QS_lcks": "锁定尺寸",
+    "Menu_BuildInfo": "构建信息",
     "Menu_Update": "检查更新",
     "Menu_Doc": "文档",
     "Menu_Set": "设置",
@@ -191,6 +192,12 @@
     "BI_certlm": "计算机证书",
     "BI_appwiz": "程序和功能",
     "BI_optionalfeatures": "Windows 功能",
+    "BI_godmode": "上帝模式",
+    "BI_envar": "环境变量",
+    "BI_taskschd": "任务计划程序",
+    "BI_secpol": "本地安全策略",
+    "BI_eventvwr": "事件查看器",
+    "BI_msconfig": "系统配置",
 
 
 
@@ -403,6 +410,7 @@
     "SSTR_010054": "开启主题透明",
     "SSTR_010055": "鼠标中键单击分类运行全部",
     "SSTR_010056": "自动备份",
+    "SSTR_010058": "关闭按钮执行动作",
 
 
     "ST_000001": "优先级低于托盘菜单的勿扰模式",
@@ -477,7 +485,8 @@
     "SI_000043": "右 ALT 键",
     "SI_000044": "左 Windows 键",
     "SI_000045": "右 Windows 键",
-
+    "SI_000046": "隐藏 (默认)",
+    "SI_000047": "退出",
 
     "__END": ""
 }

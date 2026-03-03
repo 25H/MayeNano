@@ -94,6 +94,7 @@
     "Menu_QS_mrp": "自動重置位置",
     "Menu_QS_lckp": "鎖定位置",
     "Menu_QS_lcks": "鎖定尺寸",
+    "Menu_BuildInfo": "建構資訊",
     "Menu_Update": "檢查更新",
     "Menu_Doc": "檔案",
     "Menu_Set": "設定",
@@ -184,6 +185,12 @@
     "BI_certlm": "電腦憑證",
     "BI_appwiz": "程式和功能",
     "BI_optionalfeatures": "Windows 功能",
+    "BI_godmode": "上帝模式",
+    "BI_envar": "環境變數",
+    "BI_taskschd": "工作排程器",
+    "BI_secpol": "本機安全性原則",
+    "BI_eventvwr": "事件檢視器",
+    "BI_msconfig": "系統設定",
 
 
     
@@ -394,6 +401,7 @@
     "SSTR_010054": "開啟主題透明",
     "SSTR_010055": "滑鼠中鍵點擊分類執行全部",
     "SSTR_010056": "自動備份",
+    "SSTR_010058": "關閉按鈕執行動作",
 
 
     "ST_000001": "優先權低於系統匣選單的勿擾模式",
@@ -469,7 +477,8 @@
     "SI_000043": "右 Alt 鍵",
     "SI_000044": "左 Windows 鍵",
     "SI_000045": "右 Windows 鍵",
-
+    "SI_000046": "隱藏 (預設)",
+    "SI_000047": "退出",
 
     "__END": ""
 }
