@@ -21,6 +21,7 @@
 
     
     "Tip_Search": "Search... Keywords / Regular Expressions / Terminal Commands",
+    "Tip_DropHint": "Drag items here from the main window",
     "Tip_RestartEffective": "This option takes effect after restart",
     "Tip_DelCate": "Delete the category \"{0}\"?",
     "Tip_DelItem": "Delete the item \"{0}\"?",
@@ -36,9 +37,11 @@
     "Tip_ErrHttp": "HTTP Request Error",
     "Tip_ErrJson": "JSON Data Error",
     
+    "Tip_ErrPWD": "Password Error",
 
 
 
+    "Title_New": "New",
     "Title_ReCateName": "Enter New Category Name",
     "Title_Edit": "Edit - {0}",
     "Title_EditUrl": "Edit URL - {0}",
@@ -47,6 +50,9 @@
     "Title_EditScript": "Edit Script - {0}",
     "Title_EditBuiltIn": "Edit Built-in Item - {0}",
     "Title_AddBuiltIn": "Add Built-in Item",
+    "Title_SetPWD": "Set Password",
+    "Title_InputPWDOld": "Enter Old Password",
+    "Title_InputPWDNew": "Enter New Password (Leave blank to clear)",
 
 
     
@@ -55,13 +61,15 @@
     "Btn_Cancel": "Cancel",
     "Btn_DownUpdate": "Download Update",
 
+    "Btn_Execute": "Execute",
     "Btn_Scope": "Scope",
     "Btn_Select": "Select",
     "Btn_Browse": "Browse",
     "Btn_Download": "Download",
     "Btn_Clean": "Clear",
+    "Btn_Del": "Delete",
+    "Btn_Edit": "Edit",
     "Btn_Keypad": "Key",
-
     "Btn_ReLoad": "Reload",
     "Btn_Save": "Save",
     "Btn_SaveAs": "Save As",
@@ -87,6 +95,7 @@
     "Menu_Clean": "Clear",
 
     "Menu_Tools": "Tools",
+    "Menu_Taskschd": "Task Scheduler",
     "Menu_Taskmgr": "Task Manager",
     "Menu_DataManager": "Data Manager",
     "Menu_ViewHotKey": "Item Hotkeys",
@@ -103,11 +112,11 @@
     "Menu_BuildInfo": "Build Info",
     "Menu_Update": "Check for Updates",
     "Menu_Doc": "Documentation",
+    "Menu_Help": "Help",
     "Menu_Set": "Settings",
     "Menu_Exit": "Exit",
 
     "Menu_NewC": "New Category",
-    "Menu_NewTitleC": "New Title",
     "Menu_View": "View",
     "Menu_ViewGlobal": "Use Global Settings",
     "Menu_ViewIcon0": "Icons",
@@ -121,20 +130,24 @@
     "Menu_ViewName2": "Two Lines",
     "Menu_ViewName3": "Three Lines",
     "Menu_Type": "Type",
+    "Menu_ExcludeSearch": "Exclude Search",
+    "Menu_PWD": "Password",
     "Menu_ReName": "Rename",
     "Menu_DelC": "Delete",
 
-    "Menu_NewTitle": "New Title",
-    "Menu_NewNull": "New Blank Placeholder",
-    "Menu_NewScript": "New Script",
-    "Menu_NewURL": "New URL",
-    "Menu_NewNil": "New Empty Item",
-    "Menu_AddBI": "Add Built-in Item",
+    "Menu_Refresh": "Refresh",
+    "Menu_New": "New",
+    "Menu_NewTitle": "Title",
+    "Menu_NewNull": "Blank Placeholder",
+    "Menu_NewScript": "Script",
+    "Menu_NewURL": "URL",
+    "Menu_NewNil": "Empty",
+    "Menu_AddBI": "Built-in",
     "Menu_RunAll": "Run All",
     "Menu_DownIcoAll": "Download All Link Icons",
-    "Menu_ReIconCacheC": "Rebuild Icon Cache for This Category",
     "Menu_DelitemAll": "Delete All Items",
 
+    "Menu_GotoItem": "Goto Item Location",
     "Menu_RunAsAdmin": "Run as Administrator",
     "Menu_RunAsMin": "Run Minimized",
     "Menu_RunAsWay": "Open With",
@@ -206,6 +219,7 @@
     "STR_Target":                   "Target",
     "STR_StartDir":                 "Start In",
     "STR_StartParam":               "Startup Parameters",
+    "STR_Param":                    "Param",
     "STR_RunAsAdmin":               "Run as administrator",
     "STR_HotKey":                   "Hotkey",
     "STR_InputMode":                "Input Mode",
@@ -228,7 +242,53 @@
     "STR_Normal":                   "Normal",
     "STR_BelowNormal":              "Below Normal",
     "STR_Low":                      "Low",
+    "STR_RunCount":                 "RunCount",
+    "STR_Type":                     "Type",
+    "STR_TaskConf":                 "Task Config",
+    "STR_TaskList":                 "Task List",
 
+    "STR_Pattern":                  "Mode",
+    "STR_ParamConf":                "Parameter Config",
+
+    "STR_Second":                   "Second",
+    "STR_Minute":                   "Minute",
+    "STR_Hour":                     "Hour",
+    "STR_Day":                      "Day",
+    "STR_Month":                    "Month",
+    "STR_Week":                     "Week",
+    "STR_Year":                     "Year",
+
+    "STR_Z0":                       "Sunday",
+    "STR_Z1":                       "Monday",
+    "STR_Z2":                       "Tuesday",
+    "STR_Z3":                       "Wednesday",
+    "STR_Z4":                       "Thursday",
+    "STR_Z5":                       "Friday",
+    "STR_Z6":                       "Saturday",
+
+    "STR_Cron":                     "Cron",
+    "STR_Autoruns":                 "Autoruns",
+    "STR_EveryStart":               "Every start",
+    "STR_Unknown":                  "Unknown",
+
+    "STR_Any_sb":                   "Any (*)",
+    "STR_Unspecified_sb":           "Unspecified (?)",
+    "STR_Range_sb":                 "Range (-)",
+    "STR_Step_sb":                  "Step (/)",
+    "STR_WeekOrder_sb":             "Week Order (#)",
+    "STR_FixedValue":               "Fixed Value",
+
+    "STR_From":                     "From",
+    "STR_StartEvery":               "every",
+    "STR_Unit":                     "units",
+    "STR_Nth":                      "the",
+    "STR_th":                       "th",
+
+    "STR_NextRunTime":              "Next Execution Time",
+    "STR_Expression":               "Expression",
+    "STR_InvalidExpression":        "Invalid expression combination",
+
+    
     "STR_00001": "Keyword Restriction (Supports \"*\" and \"?\" wildcards; multiple keywords separated by \";\")",
 
     
@@ -266,7 +326,7 @@
     "TS_0026":"Scrollbar-Hover",
     "TS_0027":"Scrollbar-Active",
 
-    "TS_0028":"",
+    "TS_0028":"Window-Border",
     "TS_0029":"SubWindow-Background",
     "TS_0030":"SubWindow-Separator",
 
@@ -336,6 +396,7 @@
     
     "SSTR_000100": "General",
     "SSTR_000101": "Tray",
+    "SSTR_000117": "DragDrop",
     "SSTR_000102": "Data",
     "SSTR_000103": "Advanced",
     "SSTR_000104": "High Level",
@@ -387,7 +448,7 @@
     "SSTR_010031": "Snap to screen edges",
     "SSTR_010032": "Enable snap animation",
     "SSTR_010034": "After mouse leaves main window",
-    "SSTR_010035": "Do not hide when not snapped",
+    "SSTR_010035": "Edge snap or screen four-corner snap; do not hide on mouse exit when not snapped.",
     "SSTR_010036": "After losing focus",
     "SSTR_010037": "Double-click empty area",
     "SSTR_010038": "After running item",
@@ -409,6 +470,8 @@
     "SSTR_010055": "Middle-click category to run all",
     "SSTR_010056": "Auto backup",
     "SSTR_010058": "Action performed by the close button",
+    "SSTR_010059": "Category Password Input Timing",
+    "SSTR_010060": "Drag and drop to a blank placeholder to swap positions",
 
 
     "ST_000001": "Do Not Disturb mode with lower priority than the tray menu",
@@ -485,6 +548,10 @@
     "SI_000045": "Right Windows",
     "SI_000046": "Hide (Default)",
     "SI_000047": "Default",
+    "SI_000048": "Every wake-up (Default)",
+    "SI_000049": "Every category switch",
+    "SI_000050": "Every wake-up or category switch",
+    "SI_000051": "Only once",
 
     "__END": ""
 }

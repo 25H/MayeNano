@@ -17,6 +17,7 @@
 
 
     "Tip_Search": "搜尋… 關鍵字 / 正規表示式 / 終端指令",
+    "Tip_DropHint": "請從主視窗將項目拖放至此",
     "Tip_RestartEffective": "此選項為「重啟生效」",
     "Tip_DelCate": "刪除「{0}」分類 ?",
     "Tip_DelItem": "刪除項目「{0}」 ?",
@@ -32,8 +33,11 @@
     "Tip_ErrHttp": "HTTP 請求錯誤",
     "Tip_ErrJson": "Json 資料錯誤",
     
+    "Tip_ErrPWD": "密碼錯誤",
 
 
+
+    "Title_New": "新建",
     "Title_ReCateName": "請輸入新類別名稱",
     "Title_Edit": "編輯 - {0}",
     "Title_EditUrl": "編輯Url - {0}",
@@ -42,6 +46,9 @@
     "Title_EditScript": "編輯腳本 - {0}",
     "Title_EditBuiltIn": "編輯內建項目 - {0}",
     "Title_AddBuiltIn": "添加內建項目",
+    "Title_SetPWD": "設定密碼",
+    "Title_InputPWDOld": "輸入舊密碼",
+    "Title_InputPWDNew": "輸入新密碼 (為空則清除)",
 
 
     
@@ -50,13 +57,15 @@
     "Btn_Cancel": "取消",
     "Btn_DownUpdate": "下載更新",
 
+    "Btn_Execute": "執行",
     "Btn_Scope": "範圍",
     "Btn_Select": "選擇",
     "Btn_Browse": "瀏覽",
     "Btn_Download": "下載",
     "Btn_Clean": "清除",
+    "Btn_Del": "刪除",
+    "Btn_Edit": "編輯",
     "Btn_Keypad": "按鍵",
-
     "Btn_ReLoad": "重新加載",
     "Btn_Save": "保存",
     "Btn_SaveAs": "另存為",
@@ -81,6 +90,7 @@
     "Menu_Clean": "清除",
 
     "Menu_Tools": "工具",
+    "Menu_Taskschd": "工作排程器",
     "Menu_Taskmgr": "工作管理員",
     "Menu_DataManager": "資料管理",
     "Menu_ViewHotKey": "專案快速鍵",
@@ -97,11 +107,11 @@
     "Menu_BuildInfo": "建構資訊",
     "Menu_Update": "檢查更新",
     "Menu_Doc": "檔案",
+    "Menu_Help": "說明",
     "Menu_Set": "設定",
     "Menu_Exit": "退出",
 
     "Menu_NewC": "建立分類",
-    "Menu_NewTitleC": "建立標題",
     "Menu_View": "檢視",
     "Menu_ViewGlobal": "使用全域設定",
     "Menu_ViewIcon0": "圖示",
@@ -115,20 +125,24 @@
     "Menu_ViewName2": "兩行",
     "Menu_ViewName3": "三行",
     "Menu_Type": "類別",
+    "Menu_ExcludeSearch": "排除搜尋",
+    "Menu_PWD": "密碼",
     "Menu_ReName": "重新命名",
     "Menu_DelC": "刪除",
 
-    "Menu_NewTitle": "建立 標題",
-    "Menu_NewNull": "建立 空白佔位",
-    "Menu_NewScript": "建立 Script",
-    "Menu_NewURL": "建立 Url",
-    "Menu_NewNil": "建立 空項目",
-    "Menu_AddBI": "添加 內建項目",
+    "Menu_Refresh": "重新整理",
+    "Menu_New": "新增",
+    "Menu_NewTitle": "標題",
+    "Menu_NewNull": "空白佔位",
+    "Menu_NewScript": "Script",
+    "Menu_NewURL": "Url",
+    "Menu_NewNil": "空項目",
+    "Menu_AddBI": "內建項目",
     "Menu_RunAll": "執行全部",
     "Menu_DownIcoAll": "下載所有連結圖示",
-    "Menu_ReIconCacheC": "重建此分類圖示快取",
     "Menu_DelitemAll": "刪除全部項目",
 
+    "Menu_GotoItem": "移至項目所在位置",
     "Menu_RunAsAdmin": "以管理員身份執行",
     "Menu_RunAsMin": "最小化執行",
     "Menu_RunAsWay": "打開方式",
@@ -198,6 +212,7 @@
     "STR_Target":                   "目標",
     "STR_StartDir":                 "起始位置",
     "STR_StartParam":               "啟動參數",
+    "STR_Param":                    "參數",
     "STR_RunAsAdmin":               "以管理員權限啟動",
     "STR_HotKey":                   "快捷鍵",
     "STR_InputMode":                "輸入模式",
@@ -220,6 +235,52 @@
     "STR_Normal":                   "正常",
     "STR_BelowNormal":              "低於正常",
     "STR_Low":                      "低",
+    "STR_RunCount":                 "開啟次數",
+    "STR_Type":                     "類型",
+    "STR_TaskConf":                 "任務配置",
+    "STR_TaskList":                 "任務列表",
+
+    "STR_Pattern":                  "模式",
+    "STR_ParamConf":                "參數配置",
+
+    "STR_Second":                   "秒",
+    "STR_Minute":                   "分",
+    "STR_Hour":                     "時",
+    "STR_Day":                      "日",
+    "STR_Month":                    "月",
+    "STR_Week":                     "週",
+    "STR_Year":                     "年",
+
+    "STR_Z0":                       "週日",
+    "STR_Z1":                       "週一",
+    "STR_Z2":                       "週二",
+    "STR_Z3":                       "週三",
+    "STR_Z4":                       "週四",
+    "STR_Z5":                       "週五",
+    "STR_Z6":                       "週六",
+
+    "STR_Cron":                     "定時",
+    "STR_Autoruns":                 "開機啟動",
+    "STR_EveryStart":               "每次啟動",
+    "STR_Unknown":                  "未知",
+
+    "STR_Any_sb":                   "任意 (*)",
+    "STR_Unspecified_sb":           "不指定 (?)",
+    "STR_Range_sb":                 "範圍 (-)",
+    "STR_Step_sb":                  "進階 (/)",
+    "STR_WeekOrder_sb":             "周序 (#)",
+    "STR_FixedValue":               "固定值",
+
+    "STR_From":                     "從",
+    "STR_StartEvery":               "開始，每隔",
+    "STR_Unit":                     "單位",
+    "STR_Nth":                      "的第",
+    "STR_th":                       "個",
+
+    "STR_NextRunTime":              "下次執行時間",
+    "STR_Expression":               "運算式",
+    "STR_InvalidExpression":        "不支援當前的符號組合",
+
 
     "STR_00001": "關鍵字限定 (支援 \"*\" 與 \"?\" 萬用字元，多個可用 \";\" 區隔)",
 
@@ -258,7 +319,7 @@
     "TS_0026": "拖動條-懸停",
     "TS_0027": "拖動條-激活",
 
-    "TS_0028": "",
+    "TS_0028": "視窗-邊框",
     "TS_0029": "子視窗-背景",
     "TS_0030": "子視窗-分隔線",
 
@@ -329,6 +390,7 @@
     
     "SSTR_000100": "一般",
     "SSTR_000101": "系統匣",
+    "SSTR_000117": "拖放",
     "SSTR_000102": "資料",
     "SSTR_000103": "進階",
     "SSTR_000104": "進階",
@@ -380,7 +442,7 @@
     "SSTR_010031": "螢幕邊緣吸附",
     "SSTR_010032": "開啟吸附動效",
     "SSTR_010034": "滑鼠移出主視窗後",
-    "SSTR_010035": "邊緣吸附未吸附時不執行滑鼠移出隱藏",
+    "SSTR_010035": "邊緣吸附或螢幕四角吸附，未吸附時不執行滑鼠移出隱藏",
     "SSTR_010036": "失去焦點後",
     "SSTR_010037": "按兩下空白處",
     "SSTR_010038": "執行專案後",
@@ -402,6 +464,8 @@
     "SSTR_010055": "滑鼠中鍵點擊分類執行全部",
     "SSTR_010056": "自動備份",
     "SSTR_010058": "關閉按鈕執行動作",
+    "SSTR_010059": "分類密碼輸入時機",
+    "SSTR_010060": "拖放到空白占位時交換位置",
 
 
     "ST_000001": "優先權低於系統匣選單的勿擾模式",
@@ -479,6 +543,10 @@
     "SI_000045": "右 Windows 鍵",
     "SI_000046": "隱藏 (預設)",
     "SI_000047": "退出",
+    "SI_000048": "每次喚醒 (預設)",
+    "SI_000049": "每次切換分類",
+    "SI_000050": "每次喚醒或切換分類",
+    "SI_000051": "僅一次",
 
     "__END": ""
 }

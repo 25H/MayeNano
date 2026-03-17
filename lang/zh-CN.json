@@ -21,6 +21,7 @@
 
     
     "Tip_Search": "搜索... 关键词 / 正则表达式 / 终端命令",
+    "Tip_DropHint": "请从主窗口将项目拖放至此",
     "Tip_RestartEffective": "此选项为「重启生效」",
     "Tip_DelCate": "删除「{0}」分类 ?",
     "Tip_DelItem": "删除项目「{0}」 ?",
@@ -36,9 +37,10 @@
     "Tip_ErrHttp": "HTTP 请求错误",
     "Tip_ErrJson": "Json 数据错误",
     
+    "Tip_ErrPWD": "密码错误",
 
 
-
+    "Title_New": "新建",
     "Title_ReCateName": "请输入新分类名称",
     "Title_Edit": "编辑 - {0}",
     "Title_EditUrl": "编辑Url - {0}",
@@ -47,7 +49,9 @@
     "Title_EditScript": "编辑脚本 - {0}",
     "Title_EditBuiltIn": "编辑内置项目 - {0}",
     "Title_AddBuiltIn": "添加内置项目",
-
+    "Title_SetPWD": "设置密码",
+    "Title_InputPWDOld": "输入旧密码",
+    "Title_InputPWDNew": "输入新密码(为空则清除)",
 
     
 
@@ -55,13 +59,15 @@
     "Btn_Cancel": "取消",
     "Btn_DownUpdate": "下载更新",
 
+    "Btn_Execute": "执行",
     "Btn_Scope": "范围",
     "Btn_Select": "选择",
     "Btn_Browse": "浏览",
     "Btn_Download": "下载",
     "Btn_Clean": "清除",
+    "Btn_Del": "删除",
+    "Btn_Edit": "编辑",
     "Btn_Keypad": "按键",
-
     "Btn_ReLoad": "重新加载",
     "Btn_Save": "保存",
     "Btn_SaveAs": "另存为",
@@ -87,6 +93,7 @@
     "Menu_Clean": "清除",
 
     "Menu_Tools": "工具",
+    "Menu_Taskschd": "任务计划",
     "Menu_Taskmgr": "任务管理器",
     "Menu_DataManager": "数据管理",
     "Menu_ViewHotKey": "项目快捷键",
@@ -103,11 +110,11 @@
     "Menu_BuildInfo": "构建信息",
     "Menu_Update": "检查更新",
     "Menu_Doc": "文档",
+    "Menu_Help": "帮助",
     "Menu_Set": "设置",
     "Menu_Exit": "退出",
 
     "Menu_NewC": "新建分类",
-    "Menu_NewTitleC": "新建标题",
     "Menu_View": "视图",
     "Menu_ViewGlobal": "使用全局设置",
     "Menu_ViewIcon0": "图标",
@@ -121,20 +128,24 @@
     "Menu_ViewName2": "两行",
     "Menu_ViewName3": "三行",
     "Menu_Type": "类别",
+    "Menu_ExcludeSearch": "排除搜索",
+    "Menu_PWD": "密码",
     "Menu_ReName": "重命名",
     "Menu_DelC": "删除",
 
-    "Menu_NewTitle": "新建 标题",
-    "Menu_NewNull": "新建 空白占位",
-    "Menu_NewScript": "新建 Script",
-    "Menu_NewURL": "新建 Url",
-    "Menu_NewNil": "新建 空项目",
-    "Menu_AddBI": "添加 内置项目",
+    "Menu_Refresh": "刷新",
+    "Menu_New": "新建",
+    "Menu_NewTitle": "标题",
+    "Menu_NewNull": "空白占位",
+    "Menu_NewScript": "Script",
+    "Menu_NewURL": "Url",
+    "Menu_NewNil": "空项目",
+    "Menu_AddBI": "内置项目",
     "Menu_RunAll": "运行全部",
     "Menu_DownIcoAll": "下载所有链接图标",
-    "Menu_ReIconCacheC": "重建此分类图标缓存",
     "Menu_DelitemAll": "删除全部项目",
 
+    "Menu_GotoItem": "转到项目所在位置",
     "Menu_RunAsAdmin": "以管理员身份运行",
     "Menu_RunAsMin": "最小化运行",
     "Menu_RunAsWay": "打开方式",
@@ -206,6 +217,7 @@
     "STR_Target":                   "目标",
     "STR_StartDir":                 "起始位置",
     "STR_StartParam":               "启动参数",
+    "STR_Param":                    "参数",
     "STR_RunAsAdmin":               "以管理员权限运行",
     "STR_HotKey":                   "快捷键",
     "STR_InputMode":                "输入模式",
@@ -228,6 +240,51 @@
     "STR_Normal":                   "正常",
     "STR_BelowNormal":              "低于正常",
     "STR_Low":                      "低",
+    "STR_RunCount":                 "打开次数",
+    "STR_Type":                     "类型",
+    "STR_TaskConf":                 "任务配置",
+    "STR_TaskList":                 "任务列表",
+
+    "STR_Pattern":                  "模式",
+    "STR_ParamConf":                "参数配置",
+
+    "STR_Second":                   "秒",
+    "STR_Minute":                   "分",
+    "STR_Hour":                     "时",
+    "STR_Day":                      "日",
+    "STR_Month":                    "月",
+    "STR_Week":                     "周",
+    "STR_Year":                     "年",
+
+    "STR_Z0":                       "周日",
+    "STR_Z1":                       "周一",
+    "STR_Z2":                       "周二",
+    "STR_Z3":                       "周三",
+    "STR_Z4":                       "周四",
+    "STR_Z5":                       "周五",
+    "STR_Z6":                       "周六",
+
+    "STR_Cron":                     "定时",
+    "STR_Autoruns":                 "开机启动",
+    "STR_EveryStart":               "每次启动",
+    "STR_Unknown":                  "未知",
+    
+    "STR_Any_sb":                   "任意 (*)",
+    "STR_Unspecified_sb":           "不指定 (?)",
+    "STR_Range_sb":                 "范围 (-)",
+    "STR_Step_sb":                  "步进 (/)",
+    "STR_WeekOrder_sb":             "周序 (#)",
+    "STR_FixedValue":               "固定值",
+
+    "STR_From":                     "从",
+    "STR_StartEvery":               "开始，每隔",
+    "STR_Unit":                     "单位",
+    "STR_Nth":                      "的第",
+    "STR_th":                       "个",
+
+    "STR_NextRunTime":              "下次执行时间",
+    "STR_Expression":               "表达式",
+    "STR_InvalidExpression":        "不支持当前的符号组合",
 
     "STR_00001": "关键词限定 (支持 \"*\" 与 \"?\" 通配符，多个可用 \";\" 分隔)",
 
@@ -267,7 +324,7 @@
     "TS_0026": "拖动条-悬停",
     "TS_0027": "拖动条-激活",
 
-    "TS_0028": "",
+    "TS_0028": "窗口-边框",
     "TS_0029": "子窗口-背景",
     "TS_0030": "子窗口-分隔线",
 
@@ -338,6 +395,7 @@
     
     "SSTR_000100": "常规",
     "SSTR_000101": "托盘",
+    "SSTR_000117": "拖放",
     "SSTR_000102": "数据",
     "SSTR_000103": "进阶",
     "SSTR_000104": "高级",
@@ -353,6 +411,7 @@
     "SSTR_000113": "搜索范围",
     "SSTR_000114": "匹配条件",
     "SSTR_000115": "已安装的扩展",
+    
 
     "SSTR_010001": "语言",
     "SSTR_010002": "开机启动",
@@ -389,7 +448,7 @@
     "SSTR_010031": "屏幕边缘吸附",
     "SSTR_010032": "开启吸附动效",
     "SSTR_010034": "鼠标移出主窗口后",
-    "SSTR_010035": "边缘吸附未吸附时不执行鼠标移出隐藏",
+    "SSTR_010035": "边缘吸附或屏幕四角吸附，未吸附时不执行鼠标移出隐藏",
     "SSTR_010036": "失去焦点后",
     "SSTR_010037": "双击空白处",
     "SSTR_010038": "运行项目后",
@@ -411,6 +470,8 @@
     "SSTR_010055": "鼠标中键单击分类运行全部",
     "SSTR_010056": "自动备份",
     "SSTR_010058": "关闭按钮执行动作",
+    "SSTR_010059": "分类密码输入时机",
+    "SSTR_010060": "拖放到空白占位时交换位置",
 
 
     "ST_000001": "优先级低于托盘菜单的勿扰模式",
@@ -487,6 +548,11 @@
     "SI_000045": "右 Windows 键",
     "SI_000046": "隐藏 (默认)",
     "SI_000047": "退出",
+    "SI_000048": "每次唤醒 (默认)",
+    "SI_000049": "每次切换分类",
+    "SI_000050": "每次唤醒或切换分类",
+    "SI_000051": "仅一次",
+
 
     "__END": ""
 }
