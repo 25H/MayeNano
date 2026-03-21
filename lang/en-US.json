@@ -26,7 +26,10 @@
     "Tip_DelCate": "Delete the category \"{0}\"?",
     "Tip_DelItem": "Delete the item \"{0}\"?",
     "Tip_DelItemAll": "Delete all items in the category \"{0}\"?",
+    "Tip_DelVirtualFolder": "Delete virtual folder \"{0}\"?",
+    "Tip_DelVirtualFolderAll": "Delete all items inside virtual folder \"{0}\"?",
     "Tip_RunAll": "Run all items under the category \"{0}\"?",
+    "Tip_RunAllVirtualFolder": "Run all items under virtual folder \"{0}\"?",
     "Tip_RunConfirm": "Continue with the risky operation \"{0}\"?",
 
     "Tip_GetUpdateInfo": "Retrieving server update information…",
@@ -47,6 +50,7 @@
     "Title_EditUrl": "Edit URL - {0}",
     "Title_EditAppx": "Edit Appx - {0}",
     "Title_EditTitle": "Edit Title - {0}",
+    "Title_EditFolder": "Edit Virtual Folder - {0}",
     "Title_EditScript": "Edit Script - {0}",
     "Title_EditBuiltIn": "Edit Built-in Item - {0}",
     "Title_AddBuiltIn": "Add Built-in Item",
@@ -139,6 +143,7 @@
     "Menu_New": "New",
     "Menu_NewTitle": "Title",
     "Menu_NewNull": "Blank Placeholder",
+    "Menu_NewVirtualFolder": "Virtual Folder",
     "Menu_NewScript": "Script",
     "Menu_NewURL": "URL",
     "Menu_NewNil": "Empty",
@@ -381,6 +386,13 @@
     "TS_0072":"Control-Slider-Background-Hover",
     "TS_0073":"Control-Slider-Background-Active",
 
+    "TS_0074": "Item-Navigation-Separator",
+    "TS_0075": "Item-Navigation-Button-Text-Current-Normal",
+    "TS_0076": "Item-Navigation-Button-Text-Normal",
+    "TS_0077": "Item-Navigation-Button-Background-Normal",
+    "TS_0078": "Item-Navigation-Button-Background-Hover",
+    "TS_0079": "Item-Navigation-Button-Background-Active",
+
 
 
 
@@ -472,7 +484,9 @@
     "SSTR_010058": "Action performed by the close button",
     "SSTR_010059": "Category Password Input Timing",
     "SSTR_010060": "Drag and drop to a blank placeholder to swap positions",
-
+    "SSTR_010061": "Background Image",
+    "SSTR_010062": "Background Type",
+    "SSTR_010063": "Background Opacity",
 
     "ST_000001": "Do Not Disturb mode with lower priority than the tray menu",
     "ST_000002": "Maximizes prevention from being covered by other programs to ensure availability",
@@ -552,6 +566,11 @@
     "SI_000049": "Every category switch",
     "SI_000050": "Every wake-up or category switch",
     "SI_000051": "Only once",
+    "SI_000052": "Center & Scale",
+    "SI_000053": "Keep Aspect Ratio",
+    "SI_000054": "Stretch",
+    "SI_000055": "Tile",
+    "SI_000056": "No Repeat",
 
     "__END": ""
 }
