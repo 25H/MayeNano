@@ -20,7 +20,7 @@
 
 
     
-    "Tip_Search": "Search... Keywords / Regular Expressions / Terminal Commands",
+    "Tip_Search": "Search...",
     "Tip_DropHint": "Drag items here from the main window",
     "Tip_RestartEffective": "This option takes effect after restart",
     "Tip_DelCate": "Delete the category \"{0}\"?",
@@ -85,6 +85,7 @@
     "Btn_Sponsor": "Donate",
     "Btn_CustomSoftware": "CustomSoft",
     "Btn_OpenThemeEditor": "Theme Editor",
+    "Btn_ParamVariable": "ParamVar",
 
 
 
@@ -109,6 +110,8 @@
     "Menu_PathConvertEn": "To Relative Path",
     "Menu_QS": "Quick Settings",
     "Menu_QS_ndm": "Do Not Disturb",
+    "Menu_QS_KeepShow": "Keep Show",
+    "Menu_QS_LockLayout": "Lock Layout",
     "Menu_QS_toMost": "Always On Top",
     "Menu_QS_mrp": "Auto Reset Position",
     "Menu_QS_lckp": "Lock Position",
@@ -319,15 +322,18 @@
     "TS_008": "Menu",
     "TS_009": "Tooltip",
     "TS_010": "Control-Input",
-    "TS_011": "Control-Input-Search",
+    "TS_011": "Search",
     "TS_012": "Control-Button",
     "TS_013": "Control-CheckBox",
     "TS_014": "Control-ComboBox",
     "TS_015": "Control-Slider",
 
     "TS_0001": "Icon-Info",
+    "TS_0002": "Drag Target-Background Color",
+    "TS_0003": "Drag Target-Icon Color",
 
     "TS_00001": "Text",
+    "TS_00033": "Text-Secondary",
     "TS_00002": "Text-Hint",
     "TS_00003": "Text-Disabled",
     "TS_00004": "Text-Normal",
@@ -367,6 +373,15 @@
     "TS_00031": "Option-Hover",
     "TS_00032": "Option-Active",
 
+    "TS_00034": "Input-Background",
+    "TS_00035": "Input-Text",
+    "TS_00036": "Input-Placeholder Text",
+
+    "TS_00037": "Button-Background",
+    "TS_00038": "Button-Text",
+    "TS_00039": "Label-Background",
+    "TS_00040": "Label-Text",
+
 
 
     
@@ -397,6 +412,9 @@
     "SSTR_000113": "Search Scope",
     "SSTR_000114": "Match Condition",
     "SSTR_000115": "Installed Plugins",
+    "SSTR_000118": "Title Bar Buttons",
+    "SSTR_000119": "Boost",
+    "SSTR_000120": "Deboost",
 
     "SSTR_010001": "Language",
     "SSTR_010002": "Run on startup",
@@ -456,10 +474,28 @@
     "SSTR_010056": "Auto backup",
     "SSTR_010058": "Action performed by the close button",
     "SSTR_010059": "Category Password Input Timing",
-    "SSTR_010060": "Drag and drop to a blank placeholder to swap positions",
+    "SSTR_010060": "Drag and drop to a Blank Placeholder Items to swap positions",
     "SSTR_010061": "Background Image",
     "SSTR_010062": "Background Type",
     "SSTR_010063": "Background Opacity",
+    "SSTR_010064": "Quick Settings",
+    "SSTR_010065": "Search",
+    "SSTR_010066": "Menu",
+    "SSTR_010067": "Close",
+    "SSTR_010068": "Enable Item Thumbnails",
+    "SSTR_010069": "Double-Click Blank Item",
+    "SSTR_010070": "Show Menu for Blank Area on Empty Item",
+    "SSTR_010071": "Move Window When Dragging Blank Placeholder Items",
+    "SSTR_010072": "ParamVar-Search",
+    "SSTR_010073": "ItemType-Sctipt",
+    "SSTR_010074": "Close Search Page After Main Window Is Closed",
+    "SSTR_010075": "Hide Main Window After Running Project",
+    "SSTR_010076": "Search Page After Running Project",
+    "SSTR_010077": "Smooth Input",
+    "SSTR_010078": "Search Delay Time",
+    "SSTR_010079": "Run Search Result with Alt + Number Keys",
+    "SSTR_010080": "Open Explorer Menu with Shift + Right Click",
+    "SSTR_010081": "Regular Expression",
 
     "ST_000001": "Do Not Disturb mode with lower priority than the tray menu",
     "ST_000002": "Maximizes prevention from being covered by other programs to ensure availability",
@@ -481,6 +517,8 @@
     "ST_000018": "Allows themes to use alpha channels for windows to achieve semi-transparent effects [Click for documentation]",
     "ST_000019": "Number of automatic backups (Frequency: 10 mins). 0: Off; Recommended: 10+;",
     "ST_000020": "Set Background Image Layer [Click to view documentation]",
+    "ST_000021": "Wait for more input before searching to reduce load on result loading",
+    "ST_000022": "Wait time after input stops before showing results, recommended: 150-300",
 
     "ST_010001": "Official Plugins",
     "ST_010002": "Plugin Type: Search",
