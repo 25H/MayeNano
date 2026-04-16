@@ -1,5 +1,3 @@
-﻿
-#include <windows.h>
 #include "SDK_MN.hpp"
 
 #include <deque>
@@ -10,14 +8,14 @@
 
 
 
-std::vector<mn::_MN_PLUGIN_SEARCH_RESULT_ITEM> search_results;
+std::vector<mn::SEARCH_RESULT_ITEM> search_results;
 
 std::deque<std::string> search_string_pool;// 字符串池
 const char* ssp(const std::string& s) {
     return search_string_pool.emplace_back(s).c_str();
 }
 void search_clean() {
-    std::vector<mn::_MN_PLUGIN_SEARCH_RESULT_ITEM>().swap(search_results);
+    std::vector<mn::SEARCH_RESULT_ITEM>().swap(search_results);
     std::deque<std::string>().swap(search_string_pool);
 }
 
@@ -31,17 +29,51 @@ unsigned char _testImgBlack[] = { 0x89, 0x50, 0x4E, 0x47, 0x0D, 0x0A, 0x1A, 0x0A
 0x49, 0x45, 0x4E, 0x44, 0xAE, 0x42, 0x60, 0x82 };
 
 
+// 释放上次搜索的缓存
+void _MN_Search_Free_Callback() {
+    search_clean();
+}
 
-mn::_MN_PLUGIN_SEARCH_RESULT_LIST _MN_Search_Callback(bool isClear, const char* prefix, const char* key, const char* key_low) {
+// 关键词变更
+mn::SEARCH_RESULT_LIST _MN_Search_Callback(const char* prefix, const char* key, const char* key_low) {
 
-    // 释放搜索缓存数据
-    if (isClear) {
-        search_clean();
-        return {};
-    }
+    mn::SEARCH_RESULT_ITEM a;
+    a.boost = 300;
+    a.iconBuf = (const unsigned char*)&_testImgBlack;
+    a.iconBufLen = sizeof(_testImgBlack);
 
+    // 设置新key
+    a.name = "new key";
+    a.nameSub = "set key: demo new-key";
+    a.action = mn::code::searchItemAction::NewKey;
+    a.param_0 = "demo new-key";
+    --a.boost;
+    search_results.emplace_back(a);
+
+    a.action = mn::code::searchItemAction::Nil;
+
+    // MayeNano版本号
+    a.name = "GetVersion";
+    a.nameSub = ssp(mn::Api::GetVersion());
+    --a.boost;
+    search_results.emplace_back(a);
+
+    // 自身Id
+    a.name = "GetSelfId";
+    a.nameSub = ssp(mn::Api::GetSelfId());
+    --a.boost;
+    search_results.emplace_back(a);
+
+    // 自身目录
+    a.name = "GetSelfDir";
+    a.nameSub = ssp(mn::Api::GetSelfDir());
+    --a.boost;
+    search_results.emplace_back(a);
+
+
+    // 填充一点测试数据
     for (size_t i = 0; i < 100; i++) {
-        mn::_MN_PLUGIN_SEARCH_RESULT_ITEM a;
+        mn::SEARCH_RESULT_ITEM a;
         a.name = ssp(std::string("aaa-") + std::to_string(i));
         a.boost = i;
         a.icon = "pkg:/img/plugin/_testImgRed.png";
@@ -55,6 +87,7 @@ mn::_MN_PLUGIN_SEARCH_RESULT_LIST _MN_Search_Callback(bool isClear, const char* 
         search_results.emplace_back(a);
     }
 
+    // 返回
     return {
         .items = search_results.data(),
         .count = (unsigned int)search_results.size(),
@@ -65,84 +98,87 @@ mn::_MN_PLUGIN_SEARCH_RESULT_LIST _MN_Search_Callback(bool isClear, const char* 
 
 // 此函数用作事件通知
 mn::_MN_RESULT _MN_Notify(unsigned int msg, void* param1, void* param2) {
-
+    
     switch (msg) {
-
+        
         // 插件事件-被载入
-        case _MN_PLUGIN_EVENT_LOAD:
+        case mn::code::notify::Load:
         {
-            return NULL;
+            return Null;
         }
-
+        
         // 插件事件-销毁(被禁用不会调用此事件)
-        case _MN_PLUGIN_EVENT_DESTROY:
+        case mn::code::notify::Destroy:
         {
-            return NULL;
+            return Null;
         }
-
+        
         // 插件事件-被启用，当用户在 设置页 启用插件时，触发此事件
-        case _MN_PLUGIN_EVENT_ENABLE:
+        case mn::code::notify::Enable:
         {
-            return NULL;
+            return Null;
         }
-
+        
         // 插件事件-被禁用，当用户在 设置页 禁用插件时，触发此事件
-        case _MN_PLUGIN_EVENT_DISABLE:
+        case mn::code::notify::Disable:
         {
-            return NULL;
+            return Null;
         }
-
-        // 插件事件-配置被更改，当用户更改了设置时，触发此事件
-        case _MN_PLUGIN_EVENT_CONFIG_CHANGE:
+        
+        // 插件事件-打开选项，当用户点击选项，触发此事件
+        case mn::code::notify::Open_Option:
         {
-            return NULL;
+            return Null;
         }
-
-        // 插件事件-搜索-初始化，插件类型为 _MN_PLUGIN_TYPE_SEARCH 时，触发此事件，并要求设置callback触发条件信息
-        case _MN_PLUGIN_EVENT_SEARCH_INIT:
+        
+        // 插件事件-搜索-初始化，插件类型为 mn::code::type::Search 时，触发此事件，并要求设置callback触发条件信息
+        case mn::code::notify::Search_Init:
         {
-
-            auto info = (mn::_MN_PLUGIN_SEARCH_INFO*)param1;
+            auto info = (mn::_SEARCH_INFO*)param1;
 
             info->name = "Demo";
-            info->desc = (char*)u8"Demo-Demo-搜索";
+            info->desc = "Demo-Demo-搜索";
 
             info->icon = "demo.png";
             info->boost = 100;
 
-            info->keys = (char*)u8"demo\0d \0d\0\0";
-            info->regex = NULL;
-            info->fn = &_MN_Search_Callback;
+            info->keys = "demo\0d \0d\0\0";
+            info->regex = Null;
+            info->fn = _MN_Search_Callback;
+            info->fn_free = _MN_Search_Free_Callback;
 
-            return TRUE;
+            return True;
         }
+        
 
     }
 
-    return NULL;
+
+    return Null;
 }
 
 
 
 
 // 插件基本信息
-__MN_PLUGIN_IN__ mn::_MN_PLUGIN_INFO _MN_Info(void* fn, void* ctx) {
+__MN_PLUGIN_IN__ mn::_PLUGIN_INFO _MN_Info(void* fn, void* ctx) {
 
-    mn::_MN_API_FN = (mn::_PFN_API_FN)fn;
+    mn::_MN_API_FN = (mn::PFN_API_FN)fn;
     mn::_MN_CTX = ctx;
 
     return {
+        .sdk_version    = MN_SDK_VERSION,
 
-        .name           = (char*)u8"Demo",
-        .description    = (char*)u8"description",
-        .version        = (char*)u8"1.0.0.1",
-        
-        .author         = (char*)u8"author",
-        .email          = (char*)u8"email",
-        .homepage       = (char*)u8"homepage",
-        
-        .type           = _MN_PLUGIN_TYPE_SEARCH,
-        .fnNotify       = &_MN_Notify,
+        .name           = "Demo",
+        .description    = "description",
+
+        .version        = "1.0.0.1",
+        .author         = "author",
+        .email          = "email",
+        .homepage       = "homepage",
+
+        .type           = mn::code::type::Search,
+        .fnNotify       = _MN_Notify,
 
     };
 
