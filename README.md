@@ -145,6 +145,22 @@ Maye Nano 支持 Windows 环境变量同时并内置 2 个 参数变量 (变量�
 [蓝奏](https://wwaom.lanzoub.com/idOcH3j2wf1i)
 
 
+### 官方讨论
+
+[Forum >> 问题反馈](https://forum.arae.cc/t/maye-nano-issues)
+
+[Forum >> 功能请求 (请求增加功能)](https://forum.arae.cc/t/maye-nano-fr)
+
+[Forum >> 主题 (在这里分享你的 MayeNano 主题)](https://forum.arae.cc/t/maye-nano-theme)
+
+[Forum >> 插件 (探索更多 MayeNano 插件，解锁更强大的扩展玩法)](https://forum.arae.cc/t/maye-nano-plugin)
+
+[Forum >> Script (在这里分享你的 MayeNano Script，发现更多实用脚本与玩法)](https://forum.arae.cc/t/maye-nano-script)
+
+[Forum >> 文档](https://forum.arae.cc/t/maye-nano-docs)
+
+
+
 ### QQ群
 
 * <kbd>588516128</kbd> <kbd>满</kbd>
